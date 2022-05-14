@@ -23,18 +23,14 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   list-style-type: none;
-  margin-right: 100px;
 }
 
 nav ul li a {
   padding: 10px 50px;
   text-decoration: none;
   color: #fff;
-}
-
-nav ul li a:hover {
-  background: rgb(49, 46, 255);
 }
 
 #loader {

@@ -114,7 +114,9 @@ function purchase() {
 fetchMovieList()
   .then((movies) => {
     // console.log(res);
-    const movie_holder = document.getElementById("movie-holder");
+    const movie_holder = document.createElement("div");
+    movie_holder.id = "movie-holder";
+    document.getElementById("main").append(movie_holder);
     movies.forEach((movie) => {
       const movie_element = document.createElement("a");
       movie_element.classList.add("movie-link");
